@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class Now extends StatefulWidget {
+class Now extends StatelessWidget {
   const Now({super.key});
 
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+  Widget build(BuildContext context) {
+    return Container(
+      child: const Center(child: Text('search')),
+    );
   }
-  
 }

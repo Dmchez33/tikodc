@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Reception extends StatefulWidget {
-  const Reception({super.key});
-
+class Reception extends StatelessWidget {
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+  Widget build(BuildContext context) {
+    return Container(
+      child: Center(child: Text('search')),
+    );
   }
-  
 }
