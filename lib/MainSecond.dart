@@ -31,8 +31,8 @@ class _MainSecondWidget extends State<MainSecondWidget> {
     Now(),
     Add(),
     Reception(),
-    MyCustomForm()
-    //InscriptionPage(),
+    //MyApp()
+    InscriptionPage(),
   ];
 
   @override
