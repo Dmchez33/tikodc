@@ -15,19 +15,20 @@ class _RegisterWithPhoneNumberState extends State<RegisterWithPhoneNumber> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
+        resizeToAvoidBottomInset: mounted,
         backgroundColor: Colors.white,
         body: SizedBox(
           width: double.infinity,
           height: MediaQuery.of(context).size.height,
-          
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            
             children: [
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 8),
-                padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                 decoration: BoxDecoration(
                   //color: Colors.white,
                   //borderRadius: BorderRadius.circular(8),
@@ -51,7 +52,6 @@ class _RegisterWithPhoneNumberState extends State<RegisterWithPhoneNumber> {
                         print(value);
                       },
                       selectorConfig: const SelectorConfig(
-                        
                         selectorType: PhoneInputSelectorType.BOTTOM_SHEET,
                       ),
                       ignoreBlank: false,
@@ -59,6 +59,7 @@ class _RegisterWithPhoneNumberState extends State<RegisterWithPhoneNumber> {
                       selectorTextStyle: const TextStyle(color: Colors.black),
                       textFieldController: controller,
                       // formatInput: false,
+                      initialValue: PhoneNumber(isoCode: "ML", dialCode: "223"),
                       maxLength: 9,
                       keyboardType: const TextInputType.numberWithOptions(
                           signed: true, decimal: true),
@@ -85,7 +86,6 @@ class _RegisterWithPhoneNumberState extends State<RegisterWithPhoneNumber> {
                 "En continuant, tu acceptes les Conditions d'utilisation de TikTok et comfirme avoir lu les Politique de confidentialité de TikTok",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 12, color: Colors.black),
-                
               ),
               const SizedBox(
                 height: 30,

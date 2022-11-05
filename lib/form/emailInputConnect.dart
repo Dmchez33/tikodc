@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'reinitialiserMotPassePhone.dart';
+import 'renitialiserMotPasseEmail.dart';
+
 class emailInputConnect extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
@@ -84,10 +87,10 @@ Widget _buildPopupDialog(BuildContext context) {
       children: <Widget>[
         InkWell(
           onTap: () {
-            showDialog(
-              context: context,
-              builder: (BuildContext context) => _buildPopupDialog(context),
-            );
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => phoneInputRenitialisation()));
           },
           child: const Text(
             "Numéro de téléphone",
@@ -101,10 +104,10 @@ Widget _buildPopupDialog(BuildContext context) {
         ),
         InkWell(
           onTap: () {
-            showDialog(
-              context: context,
-              builder: (BuildContext context) => _buildPopupDialog(context),
-            );
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => emailInputRenitialisation()));
           },
           child: const Text(
             "E-mail",

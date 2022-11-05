@@ -76,16 +76,16 @@ flutter:
     - assets/videos/
     - media/disc_icon.png
 flutter_native_splash:
-  color: "#000000"
-  color_dark: "#000000"
-  image: assets/images/tiktok_icon.png
-  image_dark: assets/images/tiktok_icon.png
+  # color: "#000000"
+  # color_dark: "#000000"
+  background_image: assets/images/tiktok_icon.png
+  # image_dark: assets/images/tiktok_icon.png
 
-android_12:
-  icon_background_color: "#000000"
-  icon_background_color_dark: "#000000"
-  image: assets/images/tiktok_icon.png
-  image_dark: assets/images/tiktok_icon.png
+# android_12:
+#   icon_background_color: "#000000"
+#   icon_background_color_dark: "#000000"
+#   image: assets/images/tiktok_icon.png
+#   image_dark: assets/images/tiktok_icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

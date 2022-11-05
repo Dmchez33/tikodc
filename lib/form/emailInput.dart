@@ -12,12 +12,13 @@ class _MyAppState extends State<emailInput> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: mounted,
       // appBar: AppBar(
       //   title: Text('Phone Field Example'),
       // ),
-      body: Padding(
+      body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
-        child: Form(
+        children: [Form(
           key: _formKey,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,7 +51,7 @@ class _MyAppState extends State<emailInput> {
               )
             ],
           ),
-        ),
+        ),]
       ),
     );
   }
